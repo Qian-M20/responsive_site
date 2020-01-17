@@ -1,0 +1,140 @@
+/*====================this is for recipie layout====================*/
+
+
+.recipefigure img {
+        width:100%;
+    }
+
+    /* for the mobile view */
+@media screen and (max-width:800px){
+    .recipefigure {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .recipefigure {
+        height:90%;
+    }
+
+    .recipesection figure {
+        height:100%;
+    }
+
+    .recipesection {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 6fr 1fr;
+        padding:0.5em 2em;
+        /* padding:1em 6em; */
+        width:100%;
+        
+    }
+    
+    .recipesection h {
+        grid-row: 1/2;
+        font-size: 1.2em;
+    }
+    
+    .recipefigure {
+            grid-row: 2/3;
+    }
+
+    
+}
+
+/* for the desktop view */
+@media screen and (min-width:800px){
+    
+
+    .recipefigure {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap:1em;
+    }   
+
+    .recipesection figure {
+        height:80%;
+    }
+
+    .recipesection h {
+        font-size:2em;
+    }
+
+    .recipesection {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 2fr 6fr 1fr;
+        padding:0.5em 2em;
+        /* padding:1em 6em; */
+        width:100%;
+        
+    }
+    
+    .recipesection h {
+        grid-row: 1/2;
+        }
+    
+    .recipefigure {
+            grid-row: 2/3;
+        }
+
+    
+}
+
+/*************this is for the recipie section style*************/
+.recipesection {
+    background-color: #FCEEE7;
+    /* height:30vw; */
+}
+
+.recipesection h {
+    color:#F42B0B;
+    margin:auto;
+    font-weight: 800;
+}
+
+.recipefigure img {
+    width:100%;
+}
+
+
+.recipesection figure {
+    /* height:80%; */
+    transition:all 0.25s ease-in;
+    overflow: hidden;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+    transition:all 0.25s ease-out;
+}
+
+/* .item figcaption:hover figcaption {
+    transform: scale(1.2);
+    transition:all 0.25s ease-out;
+} */
+
+.item:hover{
+    cursor: pointer;
+}
+
+/* .recipesection figcaption {
+    background-color: #fff;
+    /* padding:0.2em; */
+    /* text-align: center; */
+/* } */
+
+
+figcaption {
+    font-family:Helvetica Neue;
+    color:#F42B0B;
+    font-size:0.2em;
+    /* z-index: 1; */
+    /* margin-top:-50px; */
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    /* margin-bottom:20px; */
+} 

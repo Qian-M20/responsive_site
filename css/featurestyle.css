@@ -1,0 +1,85 @@
+
+.carousel-inner h5 {
+    font-size:7vw;
+    font-family: Snell Roundhand;
+}
+
+.carousel-inner h2 {
+    font-family: Chalkboard;
+    font-size:2vw;
+}
+
+.searchbar input {
+    padding-left: 1em;
+}
+
+.carousel-item3 h5 {
+    color:rgba(244, 43, 11,.6);
+}
+
+@media screen and (max-width:800px){
+
+    .carousel-control-prev {
+        display:none;
+    }
+
+    .carousel-control-next {
+        display:none;
+    }
+
+    .searchbar {
+        display:none;
+    }
+
+}
+
+@media screen and (min-width:800px){
+
+    .searchbar {
+
+        background-color: rgba(68,177,179,19%);
+        width:100%;
+        height:10vw;
+
+    }
+
+    .searchengine {
+        width:60vw;
+        height:60px;
+        margin-top:-10px;
+        position: absolute;
+        display:grid;
+        grid-template-columns: 9fr 1fr;
+        grid-template-rows: 100%;
+        z-index: 1000;
+        margin-left:20%;
+    }
+
+    .searchbar input {
+        width:100%;
+        height:100%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        border:4px solid rgba(68,177,179,100%);
+
+    }
+
+    .magnifier {
+        margin:0;
+        background: rgba(68,177,179,100%);
+        padding:0.1vw;
+        height:60px;
+    }
+    .magnifier i {
+        width:100%;
+        height:100%;
+        color:white;
+        font-size:3.5vw;
+        line-height:60px;
+        text-align: center;
+        
+    }
+
+}
+

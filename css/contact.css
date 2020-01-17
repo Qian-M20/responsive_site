@@ -1,0 +1,135 @@
+
+/*====================this is for contact layout====================*/
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactsection {
+    width:100%;
+}
+
+/*************this is for the contact section style*************/
+
+.contact {
+    background-color: #FCEDF1;
+    /* text-align: left; */
+}
+
+
+.contactsection {
+    padding:3em;
+    line-height:2;
+}
+
+.contactsection p, li{
+    font-family:Chalkboard;
+    font-size:1em;
+    color: #4D4A4A;
+    text-align: left;
+}
+
+.contactsection p {
+    margin-left: 2em;
+    /* text-align: left; */
+}
+
+.contactsection li {
+    list-style-type: none;
+}
+.contactsection input {
+    font-family:Chalkboard;
+    font-size:1em;
+    padding:0.3em 0.7em;
+    margin:1em;
+}
+
+input::placeholder {
+    color: rgba(126,126,126,0.5);
+}
+.contactsection h2 {
+    color:#E26385;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left:2em;
+}
+
+.contactsection h2:hover {
+    cursor: pointer;
+}
+
+.contactsection .button p {
+    color:#fff;
+}
+/*************this is for the footer style*************/
+footer {
+    background-color: #2C2C2C;
+    padding:0.4em;
+
+}
+
+footer p,i {
+    color:#fff;
+    font-size: 0.8em;
+}
+
+.footersection {
+    margin-top: 1.2em;
+}
+
+/*====================this is for footer layout====================*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 3fr 3fr 1fr;
+}
+
+footer img {
+    width:60%;
+    margin-left:1em;
+    margin-top:2em;
+}
+
+footer li {
+    display: inline;
+}
+
+.footersection1 {
+    grid-column: 2/3;
+    display:flex;
+}
+
+.footersection1 a{
+    display: block;
+}
+
+.footersection3 {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+/* FOR THE MOBILE VIEW */
+@media screen and (max-width:800px){
+
+    .contactsection p, .contactsection ul {
+        display:none;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contactsection {
+        padding:1em;
+    }
+
+    .footersection2, .footersection3 {
+        display:none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 7fr 9fr 1fr;
+    }
+
+}

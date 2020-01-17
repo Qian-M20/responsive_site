@@ -1,0 +1,207 @@
+:root {
+    --background:rgba(68,177,179,.2);
+    --menucolor:#F42B0B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding:0;
+    margin:0;
+}
+
+.featuredsection {
+    margin-top:0;
+}
+
+
+
+/* for the mobile view */
+@media screen and (max-width:800px) {
+
+    header {
+        /* text-align: center; */
+        background-color: var(--background);
+        padding:1em;
+    }
+
+
+    nav ul{
+        padding:0;
+        margin-left:1.5em;
+        /* margin-right:1em; */
+    }
+
+
+    nav li {
+        list-style: none;
+        /* text-align: left; */
+        font-size: 1.2em;
+        text-transform: uppercase;
+        /* margin:5px; */
+        font-family: Arial, Helvetica, sans-serif;
+        color:gray;
+        opacity: 0;
+    }
+
+    nav a {
+        width:100%;
+    }
+
+    li:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    input {
+        display:none;
+    }
+
+    .hamburger {
+        font-size: 1.5em;
+        display:flex;
+        align-items: center;
+        position: absolute;
+        top:0;
+        padding:0;
+        padding:1em;
+    }
+
+    .logobox {
+        text-align: center;
+        height:100%;
+        /* border:2px solid purple; */
+        display:flex;
+        align-items: center;
+    }
+
+    .logobox img {
+        display:block;
+        width:40%;
+        /* border: 1px solid black; */
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+
+    nav {
+        opacity: 0;
+        transition: all 250ms ease-in-out; 
+        height: 0;
+    }   
+
+
+    #toggle:checked ~ nav {
+        /* transform: scale(1); */
+        display:block;
+        opacity:1;
+        height: 150px;
+        transition: all 250ms ease-in-out;  
+    }
+
+    #toggle:checked ~ nav li {
+        opacity: 1;
+        transition: all 350ms  ease-in-out 250ms; 
+    }
+
+    #toggle:checked ~ nav li i {
+        display:none;
+    }
+    
+    
+}
+
+/* for the desktop view */
+
+@media screen and (min-width:800px) {
+
+    input, label {
+        display:none;
+    }
+
+
+    header {
+        width:100%;
+        height:120px;
+        background-color: var(--background);
+        padding:0.2em;
+        display:grid;
+        grid-template-columns: 1fr auto minmax(300px,auto) 1fr;
+
+    }
+
+    .logobox {
+        float: left;
+        grid-column: 2/3;
+        height:100%;
+        display:flex;
+        align-items: center;
+    }
+
+    .logobox img {
+        width:70%;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    nav {
+        grid-column: 3/4;
+        height:100%;
+        display:flex;
+        align-items: center;
+    }
+
+    nav li {
+        list-style: none;
+        display:inline-block;
+        font-size:1.5em;
+        margin:0.5em 1em;
+        text-transform: uppercase;
+        color:grey;
+        position: relative;
+    }
+
+    .menu:hover {
+        cursor: pointer;
+        color:var(--menucolor);
+        transition:color 500ms ease-in-out;
+    }
+
+    .menu {
+        transition:color 500ms ease-in-out;
+    }
+
+    .menu::after {
+        content:"";
+        width:100%;
+        height:5px;
+        background-color: var(--menucolor);
+        display:block;
+        margin-top:2px;
+        position: absolute;
+        transform:scale(0,1);
+        transition:transform 250ms ease-in-out;
+    }
+
+    .menu:hover::after {
+        transform:scale(1,1);
+        transform-origin: center;
+        transition:transform 250ms ease-in-out 250ms;
+    }
+
+    .fab {
+        color:grey;
+        font-size: 1.5em;
+        transition:color 500ms ease-in-out;
+    }
+
+    .fab:hover {
+        color:var(--menucolor);
+        transition:color 500ms ease-in-out;
+
+    }
+}

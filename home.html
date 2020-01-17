@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baking Mad</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/headerstyle.css">
+    <link rel="stylesheet" href="css/featurestyle.css">
+    <link rel="stylesheet" href="css/recipe.css">
+    <link rel="stylesheet" href="css/baker.css">
+    <link rel="stylesheet" href="css/contact.css">
+     <!-- add awesome fonts -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
+     <!-- link to js files -->
+    <!-- <script src="js/TweenMax.min.js"></script>
+    <script src="js/main.js"></script> -->
+</head>
+
+<body>
+    <!--------------------------- this is the header section------------------------->
+    <header>
+        <div class="logobox">
+            <img src="img/baking-mad-logo.png" alt="logo">
+        </div>
+
+        <input type="checkbox" id="toggle">
+
+        <label for="toggle" class="hamburger">&#9776;</label>
+
+        <nav>
+            <ul>
+                <li class="menu"><a>recipe</a></li>
+                <li class="menu"><a>blog</a></li>
+                <li class="menu"><a>baker</a></li>
+                <li class="menu"><a>contact</a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---------------------------this is the featured section--------------------------->
+    <div class="featuredsection">
+
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li id="indicator1" data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li id="indicator2" data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li id="indicator3" data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/featureimg.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Easter Will Soon Be Here</h5>
+                            <h2>The Kids Are Home And The Weather Is Grim, Time to Get Baking in the Kitchen</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/featureimg2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Make Your Own Chocolate Expeirence</h5>
+                            <h2>Welcome to Toronto's Most Luxurious Chocolate Class.</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item3">
+                        <img src="img/featureimg3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Happy Baking Festival</h5>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="searchbar">
+                <div class="searchengine">
+                    <input type="text" class="searcharea" placeholder="Search recipes, ingredients, occasions or products..." >
+                    <div class="magnifier"><i class="fas fa-search"></i></div>
+                </div>
+        </div>
+
+    </div>
+
+    <!---------------------------this is the RECEPIE section--------------------------->
+    <section class="recipesection">
+    
+            <h>Top Viewed Recipies</h>
+            
+            <div class="recipefigure">
+                <figure class="item">
+                    <img class="recipeimg" src="img/recipe_1.jpg" alt="img1"/> 
+                    <!-- <figcaption>Millionaire’s Shortbread with Cadbury’s Créme Eggs</figcaption> -->
+                </figure>
+                <figure class="item">
+                    <img class="recipeimg" src="img/recipe_5.jpg" alt="img5"/>
+                    <!-- <figcaption>Light Muscovado Carrot Cake by Billington’s</figcaption> -->
+                </figure>
+                <figure class="item">
+                        <img class="recipeimg" src="img/recipe_3.jpg" alt="img3"/>
+                        <!-- <figcaption>Light Muscovado Carrot Cake by Billington’s</figcaption> -->
+                </figure>
+                <figure class="item">
+                        <img class="recipeimg" src="img/recipe_4.jpg" alt="img4"/>
+                        <!-- <figcaption>Vegan Blueberry Muffins by Juliet Sear</figcaption> -->
+                </figure>
+            </div>
+                
+        </section>
+
+          <!---------------------------this is the BAKER section--------------------------->
+    <section class="bakersection">
+        <h>Prize Draw Time</h>
+        <p1>This Is Your Chance to Win a Fantastic Prize Courtesy of Baking Mad</p1>
+        <!--this is the item 1-->
+        <div class="bakerbox">
+            <figure> 
+                <div class="bakerimg">
+                    <img src="img/baker1.png" alt="baker1"/>
+                </div>  
+
+                <div class="bakernote">
+                    <h5>Baker of the Month</h5>
+                    <h2>Fantastic Selection of Baking Goodies</h2>
+                    <div class="button">
+                        <a href="#">ENTER HERE</a>
+                    </div>
+                </div>
+            </figure>
+            <!--this is the item 2-->
+            <figure>
+                <div class="bakerimg">
+                    <img src="img/baker2.png" alt="baker2"/> 
+                </div>
+
+                <div class="bakernote">
+                    <h5>WIN!</h5>
+                    <h2>Your Chance to Win a Spring Baking Bundle</h2>
+                    <div class="button">
+                        <a href="#">ENTER HERE</a>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+        <!---------------------------this is the contact section--------------------------->
+
+        <section class="contact">
+            <div class="contactsection">
+                <h2>New Recipes to Your Inbox</h2>
+                <p>Get the latest special offers, competitions, recipes, news and Baking Mad views directly to your inbox! You Can change Your Mind at Any Time - See our Privacy Policy for Details.</p>
+                <!-- <p class="reveal email">
+                    <input type="text" name="email" placeholder="ex: myname@example.com">
+                </p>
+                <div class="button">
+                    <p>GET THE NEWSLETTER</p>
+                </div> -->
+            </div>
+    
+            <div class="contactsection">
+                <h2>Become a Member</h2>
+                <ul>
+                    <li>1. Get free entry in to our regular competitions</li>
+                    <li>2. Have a chance to become our baker of the month</li>
+                    <li>3. Help other bakers by rating and reviewing recipes</li>
+                </ul>
+                <!-- <p class="reveal email">
+                    <input type="text" name="email" placeholder="ex: myname@example.com">
+                </p>
+                <div class="button">
+                    <p>BECOME A MEMBER</p>
+                </div> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="footersection1 footersection">
+                <a href="bakingmad_index.html"><img class="logo" src="img/baking-mad-logo.png" alt="logo"/></a>
+            </div>
+    
+            <div class="footersection2 footersection">
+                <p>About Us</p>
+                <p>Contact</p>
+                <p>Terms & Conditions</p>
+            </div>
+    
+            <div class="footersection3 footersection">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <p>Facebook</p>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <p>Twitter</p>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <p>Instagram</p>
+            </div>
+            
+            <div class="footersection4 footersection">
+                <p>497 Evergreen Rd. Roseville, CA 95673</p>
+                <p>+44 345 678 903</p>
+                <p>adobexd@mail.com</p>
+            </div>
+    
+            
+    
+        </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
