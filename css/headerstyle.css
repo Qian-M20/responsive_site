@@ -12,10 +12,14 @@ body {
     margin:0;
 }
 
-.featuredsection {
-    margin-top:0;
+.logobox img {
+    width:60%;
 }
 
+header.scrolled {
+    background-color: rgb(250, 254, 234);
+    box-shadow: 13px 6px 12px 1px #8888; 
+}
 
 
 /* for the mobile view */
@@ -25,8 +29,13 @@ body {
         /* text-align: center; */
         background-color: var(--background);
         padding:1em;
+        /* height:12vh; */
+        width:100%;
     }
 
+    /* .featuredsection {
+        margin-top:12vh;
+    } */
 
     nav ul{
         padding:0;
@@ -130,8 +139,11 @@ body {
         padding:0.2em;
         display:grid;
         grid-template-columns: 1fr auto minmax(300px,auto) 1fr;
-
     }
+
+    /* .featuredsection {
+        margin-top:120px;
+    } */
 
     .logobox {
         float: left;
@@ -202,6 +214,5 @@ body {
     .fab:hover {
         color:var(--menucolor);
         transition:color 500ms ease-in-out;
-
     }
 }

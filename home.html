@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Baking Mad--Hello World!！!</title>
+    <title>Baking Mad</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/headerstyle.css">
     <link rel="stylesheet" href="css/featurestyle.css">
@@ -14,8 +14,8 @@
      <!-- add awesome fonts -->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
      <!-- link to js files -->
-    <!-- <script src="js/TweenMax.min.js"></script>
-    <script src="js/main.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -46,44 +46,61 @@
 
         <div class="bd-example">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li id="indicator1" data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li id="indicator2" data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li id="indicator3" data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/featureimg.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Easter Will Soon Be Here</h5>
-                            <h2>The Kids Are Home And The Weather Is Grim, Time to Get Baking in the Kitchen</h2>
+                <ol class="carousel-indicators">
+                    <li id="indicator1" data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li id="indicator2" data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li id="indicator3" data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/featureimg.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Easter Will Soon Be Here</h5>
+                                <h2>The Kids Are Home And The Weather Is Grim, Time to Get Baking in the Kitchen</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/featureimg2.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Make Your Own Chocolate Expeirence</h5>
-                            <h2>Welcome to Toronto's Most Luxurious Chocolate Class.</h2>
+                        <div class="carousel-item">
+                            <img src="img/featureimg2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Make Your Own Chocolate Expeirence</h5>
+                                <h2>Welcome to Toronto's Most Luxurious Chocolate Class.</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item carousel-item3">
-                        <img src="img/featureimg3.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Happy Baking Festival</h5>
+                        <div class="carousel-item carousel-item3">
+                            <img src="img/featureimg3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Happy Baking Festival</h5>
+                            </div>
                         </div>
-                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
         <div class="searchbar">
                 <div class="searchengine">
                     <input type="text" class="searcharea" placeholder="Search recipes, ingredients, occasions or products..." >
                     <div class="magnifier"><i class="fas fa-search"></i></div>
                 </div>
+
+                <div class="searchLine">
+                    <div class="searchLineColor"></div>
+                </div>
+
+                <div class="searchTag">
+                    <p>Suggested Searches:</p>
+                    <ul>
+                        <li><p>Traybake Recipes</p></li>
+                        <li><p>Cookies</p></li>
+                        <li><p>New Recipes</p></li>
+                        <li><p>Vegan</p></li>
+                        <!-- <li><p>Halloween</p></li> -->
+                        <li><p>Artisan Breads</p></li>
+                    </ul>
+                </div>
         </div>
 
     </div>
+
 
     <!---------------------------this is the RECEPIE section--------------------------->
     <section class="recipesection">
@@ -92,20 +109,48 @@
             
             <div class="recipefigure">
                 <figure class="item">
-                    <img class="recipeimg" src="img/recipe_1.jpg" alt="img1"/> 
-                    <!-- <figcaption>Millionaire’s Shortbread with Cadbury’s Créme Eggs</figcaption> -->
+                    <div class="imgbox">
+                        <img class="recipeimg" src="img/recipe_1.jpg" alt="img1"/> 
+                    </div>
+                    <figcaption>
+                        <div class="caption">
+                            Millionaire’s Shortbread with Cadbury’s Créme Eggs
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure class="item">
-                    <img class="recipeimg" src="img/recipe_5.jpg" alt="img5"/>
-                    <!-- <figcaption>Light Muscovado Carrot Cake by Billington’s</figcaption> -->
+                    <div class="imgbox">
+                        <img class="recipeimg" src="img/recipe_5.jpg" alt="img5"/>
+                    </div>
+
+                    <figcaption>
+                        <div class="caption">
+                            Light Muscovado Carrot Cake by Billington’s
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure class="item">
+                    <div class="imgbox">
                         <img class="recipeimg" src="img/recipe_3.jpg" alt="img3"/>
-                        <!-- <figcaption>Light Muscovado Carrot Cake by Billington’s</figcaption> -->
+                    </div>
+
+                    <figcaption>
+                        <div class="caption">
+                            Cake Recipes
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure class="item">
+                    <div class="imgbox">
                         <img class="recipeimg" src="img/recipe_4.jpg" alt="img4"/>
-                        <!-- <figcaption>Vegan Blueberry Muffins by Juliet Sear</figcaption> -->
+                    </div>
+
+
+                    <figcaption>
+                        <div class="caption">
+                            Vegan Blueberry Muffins by Juliet Sear
+                        </div>
+                    </figcaption>
                 </figure>
             </div>
                 
