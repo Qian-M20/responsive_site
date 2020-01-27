@@ -16,26 +16,40 @@ body {
     width:60%;
 }
 
-header.scrolled {
+#myHeader.scrolled {
     background-color: rgb(250, 254, 234);
     box-shadow: 13px 6px 12px 1px #8888; 
 }
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: none;
+}
+
 
 
 /* for the mobile view */
 @media screen and (max-width:800px) {
 
-    header {
+    #myHeader {
         /* text-align: center; */
-        background-color: var(--background);
+        background-color:rgb(250, 254, 234);
         padding:1em;
         /* height:12vh; */
         width:100%;
+        position: fixed;
+        z-index: 10003;
+        margin-top:-12vh;
     }
 
-    /* .featuredsection {
+    
+
+    .featuredsection {
         margin-top:12vh;
-    } */
+    }
 
     nav ul{
         padding:0;
@@ -84,6 +98,8 @@ header.scrolled {
         /* border:2px solid purple; */
         display:flex;
         align-items: center;
+        justify-content: center;
+
     }
 
     .logobox img {
@@ -107,7 +123,7 @@ header.scrolled {
         /* transform: scale(1); */
         display:block;
         opacity:1;
-        height: 150px;
+        height: 100px;
         transition: all 250ms ease-in-out;  
     }
 
@@ -127,23 +143,31 @@ header.scrolled {
 
 @media screen and (min-width:800px) {
 
-    input, label {
+    input, .hamburger {
         display:none;
     }
 
-
-    header {
+    #myHeader {
         width:100%;
         height:120px;
         background-color: var(--background);
         padding:0.2em;
         display:grid;
+        position: fixed;
+        z-index: 10002;
+        margin-top:-120px;
         grid-template-columns: 1fr auto minmax(300px,auto) 1fr;
     }
 
-    /* .featuredsection {
+    #myUl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .featuredsection {
         margin-top:120px;
-    } */
+    }
 
     .logobox {
         float: left;
@@ -183,6 +207,12 @@ header.scrolled {
         transition:color 500ms ease-in-out;
     }
 
+    .active {
+        cursor: pointer;
+        color:var(--menucolor);
+        transition:color 500ms ease-in-out;
+    }
+
     .menu {
         transition:color 500ms ease-in-out;
     }
@@ -199,7 +229,25 @@ header.scrolled {
         transition:transform 250ms ease-in-out;
     }
 
+    nav .active::after {
+        content:"";
+        width:100%;
+        height:5px;
+        background-color: var(--menucolor);
+        display:block;
+        margin-top:2px;
+        position: absolute;
+        transform:scale(1,1);
+        transition:transform 250ms ease-in-out 250ms;
+    }
+
     .menu:hover::after {
+        transform:scale(1,1);
+        transform-origin: center;
+        transition:transform 250ms ease-in-out 250ms;
+    }
+
+    .menu:active::after {
         transform:scale(1,1);
         transform-origin: center;
         transition:transform 250ms ease-in-out 250ms;

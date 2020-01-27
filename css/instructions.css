@@ -1,0 +1,20 @@
+.container {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.logobox {
+    grid-row: 2/3;
+}
+
+
+.instruction {
+    grid-row: 3/4;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+div {
+    text-align: center;
+}

@@ -2,12 +2,17 @@
 .carousel-inner h5 {
     font-size:7vw;
     font-family: Snell Roundhand;
+    margin-bottom:100%;
+    overflow: hidden;
 }
 
 .carousel-inner h2 {
     font-family: Chalkboard;
     font-size:2vw;
+    margin-bottom:100%;
+    overflow: hidden;
 }
+
 
 .searchbar input {
     padding-left: 1em;

@@ -1,11 +1,27 @@
 
+
+
 /*====================this is for contact layout====================*/
 .contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    padding-bottom:50px;
 }
 
+.contact h {
+    color: #E26385;
+    font-weight: 800;
+    font-size:2em;
+    line-height:3;
+    display: block;
+    text-align: center;
+}
+
+
 .contactsection {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     width:100%;
 }
 
@@ -18,13 +34,13 @@
 
 
 .contactsection {
-    padding:3em;
+    padding:2em;
     line-height:2;
 }
 
 .contactsection p, li{
     font-family:Chalkboard;
-    font-size:1em;
+    font-size:1.2em;
     color: #4D4A4A;
     text-align: left;
 }
@@ -56,6 +72,12 @@ input::placeholder {
 
 .contactsection h2:hover {
     cursor: pointer;
+}
+
+#emailBox {
+    width:80%;
+    height:20%;
+    background-color: black;
 }
 
 .contactsection .button p {
@@ -107,6 +129,8 @@ footer li {
     grid-template-columns: 1fr 6fr;
 }
 
+
+
 /* FOR THE MOBILE VIEW */
 @media screen and (max-width:800px){
 
@@ -117,6 +141,7 @@ footer li {
     .contact {
         display: grid;
         grid-template-columns: 1fr;
+        height:40vw;
     }
 
     .contactsection {
@@ -130,6 +155,14 @@ footer li {
     footer {
         display: grid;
         grid-template-columns: 1fr 7fr 9fr 1fr;
+    }
+
+    .contact h {
+        font-weight: 800;
+        font-size:1.2em;
+        line-height:3;
+        display: block;
+        text-align: center;
     }
 
 }
